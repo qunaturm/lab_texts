@@ -80,7 +80,7 @@ public:
 		else
 		{
 			auto sym = new Node(data);
-			sym->level = (End->level + 1);
+			sym->level = (End->level + 1); 
 			End->Next = sym;
 			End = End->Next;
 		}
