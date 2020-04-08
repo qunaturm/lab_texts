@@ -89,6 +89,14 @@ public:
 	void Pop_back()
 	{
 		assert(First != NULL);
+		auto tmp = new Node(*First);
+		if (tmp->Next != End)
+		{
+			tmp = tmp->Next;
+		}
+		End = tmp;
+		tmp->Next = NULL;
+
 		
 	}
 
